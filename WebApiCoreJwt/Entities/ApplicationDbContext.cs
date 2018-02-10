@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using WebApiCoreJwt.Models;
 
 namespace WebApiCoreJwt.Entities
 {
@@ -14,5 +15,7 @@ namespace WebApiCoreJwt.Entities
         {
             return @"Server=(localdb)\v11.0;Database=WebApiCoreJwt;Trusted_Connection=True;";
         }
+
+        public DbSet<Fruit> Fruits { get; set; }
     }
 }
