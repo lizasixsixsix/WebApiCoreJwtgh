@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace WebApiCoreJwt.Models
+﻿namespace WebApiCoreJwt.Models
 {
     public class Fruit
     {
@@ -9,5 +7,7 @@ namespace WebApiCoreJwt.Models
         public string Species { get; set; }
 
         public string Color { get; set; }
+
+        public string Country { get; set; }
     }
 }

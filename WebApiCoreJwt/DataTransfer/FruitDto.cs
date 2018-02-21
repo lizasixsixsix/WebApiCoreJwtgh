@@ -8,6 +8,8 @@ namespace WebApiCoreJwt.DataTransfer
 
         public string Color { get; set; }
 
+        public string Country { get; set; }
+
         public FruitDto()
         {
         }
@@ -21,6 +23,7 @@ namespace WebApiCoreJwt.DataTransfer
 
             Species = fruit.Species;
             Color = fruit.Color;
+            Country = fruit.Country;
         }
 
         public Fruit ToFruit()
@@ -28,7 +31,8 @@ namespace WebApiCoreJwt.DataTransfer
             return new Fruit
             {
                 Species = Species,
-                Color = Color
+                Color = Color,
+                Country = Country
             };
         }
     }

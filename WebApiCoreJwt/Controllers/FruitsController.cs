@@ -18,7 +18,8 @@ namespace WebApiCoreJwt.Controllers
                 var newFruitEntityEntry = context.Fruits.Add(new Fruit
                 {
                     Species = fruit.Species,
-                    Color = fruit.Color
+                    Color = fruit.Color,
+                    Country = fruit.Country
                 });
 
                 await context.SaveChangesAsync();
